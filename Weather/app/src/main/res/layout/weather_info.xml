@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="45.0dip"
+        android:background="#ffcd2626"
+        android:gravity="center_vertical"
+
+        >
+       <include layout="@layout/weather_title"/>
+        </RelativeLayout>
+    <LinearLayout
+        android:layout_below="@id/title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/biz_plugin_weather_shenzhen_bg"
+        android:orientation="vertical"
+        >
+        <include layout="@layout/weather_body"/>
+    </LinearLayout>
+
+</RelativeLayout>
